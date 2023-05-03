@@ -1,4 +1,4 @@
-# Diabetic Retinopathy Detection API using Flask
+# Fruit Detection API using Flask
 
 Requirement
 
