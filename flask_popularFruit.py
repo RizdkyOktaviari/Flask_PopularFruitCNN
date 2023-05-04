@@ -7,7 +7,7 @@ import os
 from pred import prediction
 
 
-UPLOAD_FOLDER = 'static/uploads/'
+UPLOAD_FOLDER = '/home/ubuntu/Flask_PopularFruitCNN/static/uploads/'
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
 
 app = Flask(__name__)

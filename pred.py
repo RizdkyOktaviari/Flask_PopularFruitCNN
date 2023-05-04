@@ -38,7 +38,7 @@ def build_model():
     return model
 
 model = build_model()
-model.load_weights('C:/Users/RIZKY/Downloads/FYP POPULAR FRUIT/Test/datatest/best_model.h5')
+model.load_weights('/home/ubuntu/Flask_PopularFruitCNN/best_model.h5')
 
 def load_image(filename):
     #load the image
