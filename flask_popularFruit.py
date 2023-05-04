@@ -5,14 +5,12 @@ from flask import jsonify
 from werkzeug.utils import secure_filename
 import os
 from pred import prediction
-from flask_ngrok import run_with_ngrok
 
 
 UPLOAD_FOLDER = 'static/uploads/'
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
 
 app = Flask(__name__)
-run_with_ngrok(app) # this will start ngrok when the app is run
 
 app.secret_key = "secret key"
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
@@ -52,3 +50,6 @@ def upload():
         resp = jsonify({'message' : 'Allowed file types are png, jpg, jpeg, gif'})
         resp.status_code = 400
         return resp
+
+if __name__ == "__main__":
+    app.run()
