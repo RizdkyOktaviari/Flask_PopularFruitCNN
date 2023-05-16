@@ -57,7 +57,7 @@ def prediction(filename):
     predict_x=model.predict(img)
     result=np.argmax(predict_x,axis=1)
     if result == 0:
-        pred = "Apple"
+        pred = "apple"
         return pred
     elif result == 1:
         pred = "banana"
@@ -66,7 +66,7 @@ def prediction(filename):
         pred = "beetroot"
         return pred
     elif result == 3:
-        pred = "bell pepper"
+        pred = "bellpepper"
         return pred
     elif result == 4:
         pred = "cabbage"
@@ -81,7 +81,7 @@ def prediction(filename):
         pred = "cauliflower"
         return pred
     elif result == 8:
-        pred = "chilli pepper"
+        pred = "chillipepper"
         return pred
     elif result == 9:
         pred = "corn"
@@ -144,7 +144,7 @@ def prediction(filename):
         pred = "raddish"
         return pred
     elif result == 29:
-        pred = "soy beans"
+        pred = "soybeans"
         return pred
     elif result == 30:
         pred = "spinach"
